@@ -72,7 +72,8 @@ body {
 main {
   background-color: #fff;
   border-radius: 30px;
-  max-width: 85vw;
+  width: 85vw;
+  max-width: 60rem;
 }
 .desk-images {
   display: none;
@@ -85,10 +86,9 @@ main {
 }
 
 .mobile-images .platform-img-mobile {
-position: relative;
-z-index: 3;
+  position: relative;
+  z-index: 3;
 }
-
 
 .mobile-images .shadow-img-mobile {
   position: relative;
@@ -132,7 +132,6 @@ z-index: 3;
   flex-basis: 100%;
 }
 
-
 .question-con:first-child:hover {
   color: var(--Soft-red);
 }
@@ -162,61 +161,76 @@ hr {
 }
 
 @media (min-width: 40em) {
+  body {
+    position: relative;
+    z-index: 4;
+  }
+
   main {
-    display: none;
-    position: static;
+    /* display: none; */
+    /* position: static; */
     /* display: flex; */
     /* align-items: center; */
     /* width: 75vw; */
     aspect-ratio: 16/9;
-    /* z-index: 2; */
+    /* display: flex; */
+    flex-direction: row;
+    align-items: flex-end;
+    /* position: relative; */
+    /* z-index: 3; */
   }
   .mobile-images {
     display: none;
   }
 
   .image-illustration {
-    border: 1px solid blue;
+    /* display: none; */
+    border: 1px solid red;
     width: 100%;
     margin: 0;
     position: static;
-    flex-basis: 50%;
+    /* z-index: 2; */
+    /* flex-basis: 50%; */
 
     /* top: 2rem; */
     /* right: 2rem */
   }
 
   .desk-images {
-    position: static;
-    height: 100%;
+    /* display: none; */
+    /* position: relative; */
+    /* height: 20rem; */
     display: block;
-    border: 1px solid red;
+    border: 1px solid blue;
+    margin: 10px;
+    /* z-index: 1; */
   }
 
   .desk-images .at-box {
     display: none;
-    position: absolute;
+    /* position: absolute; */
     width: 40%;
     top: 4rem;
     left: -0.5rem;
     z-index: 3;
   }
   .desk-images .platform-img {
-    position: relative;
-    /* top: 2rem; */
-    /* z-index: 1; */
-    
+    /* position: relative; */
+    right: 6rem;
+    /* top: ; */
+    /* z-index: 0; */
   }
 
   .desk-images .shadow-img {
     display: none;
     /* position: absolute; */
-   
   }
 
   .FAQs {
+    flex-basis: 100%;
     display: none;
-    margin-top: 0;
+    margin: 0;
+    padding: 0;
     text-align: start;
     /* font-size: var(--font-size); */
   }
