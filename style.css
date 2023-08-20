@@ -67,13 +67,14 @@ body {
   min-height: 100vh;
   min-height: 100lvh;
   overflow: auto;
+  position: relative;
 }
 
 main {
   background-color: #fff;
   border-radius: 30px;
   width: 85vw;
-  max-width: 60rem;
+  /* max-width: 60rem; */
 }
 .desk-images {
   display: none;
@@ -83,11 +84,13 @@ main {
   bottom: 7.4rem;
   width: 14rem;
   margin: 1rem auto;
+  /* border: blue 1px solid; */
 }
 
 .mobile-images .platform-img-mobile {
   position: relative;
   z-index: 3;
+  /* border: red 1px solid; */
 }
 
 .mobile-images .shadow-img-mobile {
@@ -104,7 +107,7 @@ main {
 
 .FAQs h1 {
   text-align: center;
-  font-size: calc(var(--font-size) * 2.5);
+  font-size: calc(var(--font-size) * 3.5);
   font-weight: 700;
   color: var(--Very-dark-desaturated-blue);
   margin-bottom: 1em;
@@ -158,6 +161,7 @@ main {
 hr {
   border: 1px solid var(--Light-grayish-blue);
   flex-basis: 100%;
+  margin-bottom: 2em;
 }
 
 @media (min-width: 40em) {
@@ -188,7 +192,7 @@ hr {
     border: 1px solid red;
     width: 100%;
     margin: 0;
-    position: static;
+    /* position: static; */
     /* z-index: 2; */
     /* flex-basis: 50%; */
 
@@ -198,25 +202,28 @@ hr {
 
   .desk-images {
     /* display: none; */
-    /* position: relative; */
+    /* position: absolute; */
     /* height: 20rem; */
     display: block;
     border: 1px solid blue;
     margin: 10px;
+    /* object-position: left 5em ; */
+    /* right: 6rem; */
     /* z-index: 1; */
   }
 
   .desk-images .at-box {
     display: none;
     /* position: absolute; */
-    width: 40%;
-    top: 4rem;
+    /* width: 40%; */
+    top: 8.5rem;
     left: -0.5rem;
     z-index: 3;
   }
   .desk-images .platform-img {
+    /* display: none; */
     /* position: relative; */
-    right: 6rem;
+    /* right: 6rem; */
     /* top: ; */
     /* z-index: 0; */
   }
