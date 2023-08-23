@@ -166,76 +166,89 @@ hr {
 
 @media (min-width: 40em) {
   body {
-    position: relative;
-    z-index: 4;
+    /* position: relative; */
+    /* z-index: 4; */
   }
 
   main {
     /* display: none; */
     /* position: static; */
     /* display: flex; */
-    /* align-items: center; */
     /* width: 75vw; */
     aspect-ratio: 16/9;
-    /* display: flex; */
+    display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
+   
     /* position: relative; */
-    /* z-index: 3; */
-  }
-  .mobile-images {
-    display: none;
-  }
-
-  .image-illustration {
-    /* display: none; */
+    z-index: 0;
     border: 1px solid red;
+  }
+  
+  .image-illustration {
+    border: 1px solid blue;
+    /* display: none; */
     width: 100%;
     margin: 0;
-    /* position: static; */
+    /* position: relative; */
+    bottom: 0;
     /* z-index: 2; */
     /* flex-basis: 50%; */
-
+    
     /* top: 2rem; */
     /* right: 2rem */
   }
 
+  .mobile-images {
+    display: none;
+  }
+
   .desk-images {
     /* display: none; */
-    /* position: absolute; */
+    position: relative;
     /* height: 20rem; */
     display: block;
-    border: 1px solid blue;
-    margin: 10px;
+    width: 100%;
+    /* margin: 10px; */
     /* object-position: left 5em ; */
     /* right: 6rem; */
     /* z-index: 1; */
   }
 
   .desk-images .at-box {
-    display: none;
-    /* position: absolute; */
+    /* display: none; */
+    position: absolute;
     /* width: 40%; */
-    top: 8.5rem;
-    left: -0.5rem;
+    top: 11em;
+    /* right: 100em; */
+    left: -7.5em;
     z-index: 3;
+    /* width: 100%; */
   }
   .desk-images .platform-img {
+    /* width: 100%; */
+    object-position: -7em;
+    /* margin: 0; */
     /* display: none; */
-    /* position: relative; */
+    /* position: absolute; */
     /* right: 6rem; */
     /* top: ; */
-    /* z-index: 0; */
+    z-index: 1;
   }
 
   .desk-images .shadow-img {
-    display: none;
-    /* position: absolute; */
+    /* object-position: -7em; */
+    /* display: none; */
+    position: absolute;
+    /* width: 100%; */
+    left: -18em;
+    bottom: -8em;
+
   }
 
   .FAQs {
     flex-basis: 100%;
-    display: none;
+    /* display: none; */
     margin: 0;
     padding: 0;
     text-align: start;
